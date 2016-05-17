@@ -13,7 +13,7 @@
 		55FC2A3C1CEB1B590096A078 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55FC2A3A1CEB1B590096A078 /* Main.storyboard */; };
 		55FC2A3E1CEB1B590096A078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55FC2A3D1CEB1B590096A078 /* Assets.xcassets */; };
 		55FC2A411CEB1B590096A078 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55FC2A3F1CEB1B590096A078 /* LaunchScreen.storyboard */; };
-		55FC2A4A1CEB1BB10096A078 /* RoundedProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55FC2A491CEB1BB10096A078 /* RoundedProgressView.m */; };
+		55FC2A4A1CEB1BB10096A078 /* AYRoundedProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55FC2A491CEB1BB10096A078 /* AYRoundedProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,8 @@
 		55FC2A3D1CEB1B590096A078 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55FC2A401CEB1B590096A078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55FC2A421CEB1B590096A078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		55FC2A481CEB1BB10096A078 /* RoundedProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoundedProgressView.h; path = ../../AYRoundedProgress/RoundedProgressView.h; sourceTree = "<group>"; };
-		55FC2A491CEB1BB10096A078 /* RoundedProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoundedProgressView.m; path = ../../AYRoundedProgress/RoundedProgressView.m; sourceTree = "<group>"; };
+		55FC2A481CEB1BB10096A078 /* AYRoundedProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AYRoundedProgressView.h; path = ../../AYRoundedProgress/AYRoundedProgressView.h; sourceTree = "<group>"; };
+		55FC2A491CEB1BB10096A078 /* AYRoundedProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AYRoundedProgressView.m; path = ../../AYRoundedProgress/AYRoundedProgressView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,8 @@
 		55FC2A301CEB1B590096A078 /* AYRoundedProgress */ = {
 			isa = PBXGroup;
 			children = (
-				55FC2A481CEB1BB10096A078 /* RoundedProgressView.h */,
-				55FC2A491CEB1BB10096A078 /* RoundedProgressView.m */,
+				55FC2A481CEB1BB10096A078 /* AYRoundedProgressView.h */,
+				55FC2A491CEB1BB10096A078 /* AYRoundedProgressView.m */,
 				55FC2A341CEB1B590096A078 /* AppDelegate.h */,
 				55FC2A351CEB1B590096A078 /* AppDelegate.m */,
 				55FC2A371CEB1B590096A078 /* ViewController.h */,
@@ -155,7 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55FC2A391CEB1B590096A078 /* ViewController.m in Sources */,
-				55FC2A4A1CEB1BB10096A078 /* RoundedProgressView.m in Sources */,
+				55FC2A4A1CEB1BB10096A078 /* AYRoundedProgressView.m in Sources */,
 				55FC2A361CEB1B590096A078 /* AppDelegate.m in Sources */,
 				55FC2A331CEB1B590096A078 /* main.m in Sources */,
 			);

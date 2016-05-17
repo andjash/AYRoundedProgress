@@ -7,12 +7,12 @@
 //
 
 #import "ViewController.h"
-#import "RoundedProgressView.h"
+#import "AYRoundedProgressView.h"
 
-@interface ViewController ()<RoundedProgressViewDelegate>
+@interface ViewController ()<AYRoundedProgressViewDelegate>
 
-@property (nonatomic, weak) IBOutlet RoundedProgressView *firstProgress;
-@property (nonatomic, weak) IBOutlet RoundedProgressView *secondProgress;
+@property (nonatomic, weak) IBOutlet AYRoundedProgressView *firstProgress;
+@property (nonatomic, weak) IBOutlet AYRoundedProgressView *secondProgress;
 
 @property (nonatomic, weak) IBOutlet UIView *firstProgressContainer;
 @property (nonatomic, weak) IBOutlet UILabel *firstProgressLabel;
@@ -42,9 +42,9 @@
     self.secondProgressContainer.layer.borderColor = self.firstProgressLabel.textColor.CGColor;
 }
 
-#pragma marl - RoundedProgressViewDelegate
+#pragma marl - AYRoundedProgressViewDelegate
 
-- (void)roundedProgressView:(RoundedProgressView *)progressView willSwitchToStep:(NSInteger)stepIndex {
+- (void)roundedProgressView:(AYRoundedProgressView *)progressView willSwitchToStep:(NSInteger)stepIndex {
     if (progressView == self.firstProgress) {
         self.firstProgressLabel.text = [NSString stringWithFormat:@"%@", @(stepIndex)];
     } else {

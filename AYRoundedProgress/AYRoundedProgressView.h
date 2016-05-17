@@ -8,25 +8,25 @@
 
 #import <UIKit/UIKit.h>
 
-@class RoundedProgressView;
+@class AYRoundedProgressView;
 
-@protocol RoundedProgressViewDelegate <NSObject>
+@protocol AYRoundedProgressViewDelegate <NSObject>
 
 @optional
-- (void)roundedProgressView:(RoundedProgressView *)progressView willSwitchToStep:(NSInteger)stepIndex;
-- (void)roundedProgressView:(RoundedProgressView *)progressView didSwitchToStep:(NSInteger)stepIndex;
+- (void)roundedProgressView:(AYRoundedProgressView *)progressView willSwitchToStep:(NSInteger)stepIndex;
+- (void)roundedProgressView:(AYRoundedProgressView *)progressView didSwitchToStep:(NSInteger)stepIndex;
 
 @end
 
 
-@interface RoundedProgressView : UIView
+@interface AYRoundedProgressView : UIView
 
 @property (nonatomic, strong) IBOutlet UIView *anchorView;
 @property (nonatomic, assign) NSInteger currentStep;
 @property (nonatomic, assign) NSInteger stepsCount;
 @property (nonatomic, assign) IBInspectable BOOL leftSided;
 @property (nonatomic, strong) IBInspectable UIColor *trackColor;
-@property (nonatomic, weak) id<RoundedProgressViewDelegate> delegate;
+@property (nonatomic, weak) id<AYRoundedProgressViewDelegate> delegate;
 
 - (void)switchToStep:(NSInteger)stepIndex animated:(BOOL)animated;
 

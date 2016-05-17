@@ -6,10 +6,10 @@
 //  Copyright © 2016 Andrey Yashnev. All rights reserved.
 //
 
-#import "RoundedProgressView.h"
+#import "AYRoundedProgressView.h"
 
 IB_DESIGNABLE
-@interface RoundedProgressView ()
+@interface AYRoundedProgressView ()
 
 @property (nonatomic, assign) CGFloat currentAngle;
 @property (nonatomic, assign) CGPoint startPoint;
@@ -20,7 +20,7 @@ IB_DESIGNABLE
 
 @end
 
-@implementation RoundedProgressView
+@implementation AYRoundedProgressView
 
 - (void)drawRect:(CGRect)rect {
     UIBezierPath *bp = [UIBezierPath bezierPath];
