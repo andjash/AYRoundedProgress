@@ -57,6 +57,15 @@ IB_DESIGNABLE
     self.anchorView.center = self.startPoint;
 }
 
+- (void)setStepsCount:(NSInteger)stepsCount {
+    _stepsCount = stepsCount;
+    if (self.leftSided) {
+        self.stepAngle = -(self.startAngle - self.endAngle) / (self.stepsCount - 1);
+    } else {
+        self.stepAngle = (- self.startAngle + self.endAngle) / (self.stepsCount - 1);
+    }
+}
+
 #pragma mark - Public
 
 - (void)switchToStep:(NSInteger)stepIndex animated:(BOOL)animated {    
